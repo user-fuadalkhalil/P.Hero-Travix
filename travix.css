@@ -1,160 +1,198 @@
 /* common styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Mulish", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", serif;
 }
 
 :root {
-    --primary-color: #FF5400;
-    --black-color:#131318;
-    --black-50-color: rgba(19, 19, 24, 0.5);
-    --offwhite-color: #f8f9fa;
-    --white-color: #ffffff;
+  --primary-color: #ff5400;
+  --black-color: #131318;
+  --black-50-color: rgba(19, 19, 24, 0.5);
+  --offwhite-color: #f8f9fa;
+  --white-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--black-color);
+}
+
+.section-description {
+  font-size: 1rem;
+  color: var(--black-color);
+  opacity: 0.7;
+  margin: 20px 200px;
 }
 
 /* header section */
 header {
-    margin: 50px 135px;
+  margin: 50px 135px;
 }
 /* navigation bar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .logo:hover .logo-image {
-    scale: 0.9;
+  scale: 0.9;
 }
 
 .logo-image {
-    width: 50px;
-    transition: all 0.2s ease;
+  width: 50px;
+  transition: all 0.2s ease;
 }
 
 .brand-name {
-    font-size: 2.25rem;
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.2s ease;
-
+  font-size: 2.25rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--black-color);
-    font-size: 1rem;
-    font-weight: 500;
-    margin-right: 30px;
-    transition: color 0.2s ease;
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 30px;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* banner section */
 .banner-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background-image: url('./resources/images/banner.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 80vh;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: url("./resources/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 80vh;
+  margin-top: 50px;
 }
 
 .banner-title {
-    color: var(--white-color);
-    font-size: 4rem;
-    text-align: center;
-    padding-bottom: 30px;
+  color: var(--white-color);
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .banner-description {
-    color: var(--white-color);
-    max-width: 800px;
-    text-align: center;
-    font-size: 1.025rem;
-    line-height: 1.5;
-    letter-spacing: 1.25px;
+  color: var(--white-color);
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.025rem;
+  line-height: 1.5;
+  letter-spacing: 1.25px;
 }
 
 .find-now-bar {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: flex;
-    gap: 30px;
-    align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
 .where-sec input {
-    border: none;
-    outline: none;
-    padding-left: 20px;
-    font-size: 1rem;
-    color: var(--black-50-color);
-    width: 175px;
-    min-height: 3.125rem;
-    border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: var(--black-50-color);
+  width: 175px;
+  min-height: 3.125rem;
+  border-radius: 0.5rem;
 }
 
 .where-sec input::placeholder {
-    color: var(--black-50-color);
+  color: var(--black-50-color);
 }
 
 .search-field {
-    background: var(--offwhite-color);
-    width: 175px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    border-radius: 8px;
+  background: var(--offwhite-color);
+  width: 175px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 8px;
 }
 
 .search-field span {
-    font-size: 1rem;
-    color: var(--black-50-color);
+  font-size: 1rem;
+  color: var(--black-50-color);
 }
 
 .down-arrow-icon {
-    width: 24px;
+  width: 24px;
 }
 
 .find-now-btn {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    padding: 10px 40px;
-    font-size: 1rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    border: 0;
-    border-radius: 0.5rem;
-    min-height: 3.125rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  border: 0;
+  border-radius: 0.5rem;
+  min-height: 3.125rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .find-now-btn:hover {
-    background-color: #b83d00;
+  background-color: #b83d00;
 }
 
 .find-now-btn img {
-    width: 1.5rem;
+  width: 1.5rem;
+}
+
+/* main section related styles */
+main {
+  margin: 50px 135px;
+}
+
+/* choose your destination section related styles */
+.choose-your-destination {
+  text-align: center;
+  margin: 0 300px;
+}
+
+.image-container {
+}
+
+.image-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.image-title {
+  position: relative;
+  transform: translate(50%, -50%);
 }
