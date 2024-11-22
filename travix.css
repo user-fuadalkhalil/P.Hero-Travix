@@ -14,6 +14,10 @@
   --white-color: #ffffff;
 }
 
+.section-text {
+  text-align: center;
+}
+
 .section-title {
   font-size: 2.5rem;
   font-weight: 800;
@@ -24,7 +28,9 @@
   font-size: 1rem;
   color: var(--black-color);
   opacity: 0.7;
-  margin: 20px 200px;
+  line-height: 1.5;
+  margin-top: 20px;
+  width: 700px;
 }
 
 /* header section */
@@ -178,8 +184,9 @@ main {
 
 /* choose your destination section related styles */
 .choose-your-destination {
-  text-align: center;
-  margin: 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-container {
@@ -195,4 +202,8 @@ main {
 .image-title {
   position: relative;
   transform: translate(50%, -50%);
+}
+
+.gallery {
+  margin-top: 50px;
 }
