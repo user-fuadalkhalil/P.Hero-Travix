@@ -153,7 +153,7 @@ header {
   width: 24px;
 }
 
-.find-now-btn {
+.basic-btn {
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 10px 40px;
@@ -169,17 +169,48 @@ header {
   transition: all 0.2s ease;
 }
 
-.find-now-btn:hover {
+.basic-btn:hover {
   background-color: #b83d00;
 }
 
-.find-now-btn img {
+.basic-btn img {
   width: 1.5rem;
 }
 
 /* main section related styles */
 main {
   margin: 50px 135px;
+}
+
+/* our popular tours section related styles */
+.our-popular-tours-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.our-popular-tours-title {
+  margin-bottom: 30px;
+}
+
+.our-popular-tours-section-column {
+  max-width: 50%;
+}
+
+.our-popular-tours-section-text p,
+li {
+  font-size: 1rem;
+  color: var(--black-color);
+  opacity: 0.7;
+  line-height: 1.8;
+}
+
+.our-popular-tours-section-text ul {
+  margin: 30px 0 30px 30px;
+}
+
+.read-more-btn {
+  margin-top: 30px;
 }
 
 /* choose your destination section related styles */
